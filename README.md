@@ -1,16 +1,11 @@
-# numbersapp
+# 📱 My Flutter App
 
-A new Flutter project.
+Bu ilovada sonlar haqida ma’lumot olinadi, offline ham ishlaydi.
 
-## Getting Started
+## 📸 Ilova ko‘rinishlari
 
-This project is a starting point for a Flutter application.
+### Home base
+![Light](images/based_home.png)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Dark Mode
+![Dark](chose_category/.png)
