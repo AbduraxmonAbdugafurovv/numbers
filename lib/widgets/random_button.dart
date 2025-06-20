@@ -57,6 +57,7 @@ class RandomButtons extends StatelessWidget {
     try {
       final result = await ApiService().fetchNumberFact(number: "random", category: category);
       showDialog(
+        // ignore: use_build_context_synchronously
         context: context,
         builder: (_) => AlertDialog(
           title: const Text('Natija'),
