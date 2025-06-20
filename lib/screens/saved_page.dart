@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:numbersapp/models/models.dart';
 
 class SavedPage extends StatelessWidget {
   const SavedPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final box = Hive.box('saved_facts');
+    final box = Hive.box<NumberFactModel>('saved_facts');
 
     return Scaffold(
       appBar: AppBar(title: const Text('Saqlanganlar')),
@@ -20,12 +21,12 @@ class SavedPage extends StatelessWidget {
           return ListView.builder(
             itemCount: box.length,
             itemBuilder: (context, index) {
-              final item = box.getAt(index);
+              final NumberFactModel item = box.getAt(index);
               return Card(
                 margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                 child: ListTile(
-                  title: Text(item['fact'] ?? 'Fakt yoʻq'),
-                  subtitle: Text('Raqam: ${item['number']}  |  Kategoriya: ${item['category']}'),
+                  title: Text(item.fact ),
+                  subtitle: Text('Raqam: ${item.number}  |  Kategoriya: ${item.category}'),
                   trailing: IconButton(
                     icon: const Icon(Icons.delete, color: Colors.red),
                     onPressed: () {

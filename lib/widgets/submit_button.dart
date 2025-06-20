@@ -100,7 +100,7 @@ class SubmitButton extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton.icon(
                   onPressed: () {
-                    final box = Hive.box('saved_facts');
+                    final box = Hive.box<NumberFactModel>('saved_facts');
                     final item = NumberFactModel(
                       number: number,
                       category: category,

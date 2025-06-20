@@ -1,6 +1,16 @@
-class NumberFactModel {
+import 'package:hive/hive.dart';
+
+part 'models.g.dart';
+
+@HiveType(typeId: 0)
+class NumberFactModel extends HiveObject {
+  @HiveField(0)
   final String number;
+
+  @HiveField(1)
   final String category;
+
+  @HiveField(2)
   final String fact;
 
   NumberFactModel({
@@ -11,22 +21,6 @@ class NumberFactModel {
 
   factory NumberFactModel.fromApi(String number, String category, String fact) {
     return NumberFactModel(number: number, category: category, fact: fact);
-  }
-
-  factory NumberFactModel.fromJson(Map<String, dynamic> json) {
-    return NumberFactModel(
-      number: json['number'],
-      category: json['category'],
-      fact: json['fact'],
-    );
-  }
-
-  Map<String, dynamic> toJson() {
-    return {
-      'number': number,
-      'category': category,
-      'fact': fact,
-    };
   }
 
   @override

@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
+import 'package:numbersapp/models/models.dart';
 import 'package:numbersapp/screens/home.dart';
 
 void main()async {
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
-  await Hive.openBox('saved_facts');
+   Hive.registerAdapter(NumberFactModelAdapter());
+
+  await Hive.openBox<NumberFactModel>('saved_facts');
   runApp(const MyApp());
 }
 
