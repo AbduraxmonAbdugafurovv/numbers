@@ -5,7 +5,10 @@ Bu ilovada sonlar haqida ma’lumot olinadi, offline ham ishlaydi.
 ## 📸 Ilova ko‘rinishlari
 
 ### Home base
-![Light](images/based_home.png)
+###![Home based](images/based_home.png)
+<img src="images/based_home.png" width="400"/>
 
-### Dark Mode
-![Dark](chose_category/.png)
+
+### 
+<img src="images/chose_category.png" width="400"/>
+
