@@ -60,7 +60,7 @@ class RandomButtons extends StatelessWidget {
         // ignore: use_build_context_synchronously
         context: context,
         builder: (_) => AlertDialog(
-          title: const Text('Natija'),
+          title: const Text('MAlumot'),
           content: Text(result.fact),
           actions: [
             TextButton(onPressed: () => Navigator.pop(context), child: const Text('OK')),
