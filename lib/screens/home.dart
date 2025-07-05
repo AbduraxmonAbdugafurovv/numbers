@@ -13,7 +13,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,8 +25,7 @@ class _HomePageState extends State<HomePage> {
             CategoryDropdown(),
             SizedBox(height: 30),
             NumberForm(),
-            SizedBox(height: 20
-            ),
+            SizedBox(height: 20),
             SubmitButton(),
             SizedBox(height: 70),
             RandomButtons(),
